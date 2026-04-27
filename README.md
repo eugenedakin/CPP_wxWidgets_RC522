@@ -7,3 +7,14 @@ Ensure the SPI communication protocol is enabled on the Raspberry Pi. The below 
 
 
 ![](https://github.com/eugenedakin/CPP_wxWidgets_RC522/blob/main/RC522Demo.gif)
+
+Installation Instructions:
+1. Install Raspberry Pi OS (64-bit)
+2. Open a terminal and type the following command:
+3. sudo apt install libwxgtk3.2-dev build-essential
+4. sudo apt install gpiod libgpiod-dev
+5. Create the example program in the terminal with:``g++ -std=c++17 -O2 RC522Rev1.cpp -o RC522Rev1 `wx-config --cxxflags --libs` $(pkg-config --cflags --libs libgpiod)``
+6. Run the program with ./RC522Rev1
+
+Below is the breadboard layout with the Raspberry Pi 4 connecting with SPI to the RC522.
+![](https://github.com/eugenedakin/CPP_wxWidgets_RC522/blob/main/Breadboard.png)
