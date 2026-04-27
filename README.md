@@ -18,3 +18,13 @@ Installation Instructions:
 
 Below is the breadboard layout with the Raspberry Pi 4 connecting with SPI to the RC522.
 ![](https://github.com/eugenedakin/CPP_wxWidgets_RC522/blob/main/Breadboard.png)
+
+Connections:
+VCC = 3.3V
+Rst = Pin22 (GPIO 25)
+Gnd = ground
+IRQ = not connected
+MISO = Pin 21 (SPI MISO) GPIO9
+MOSI = Pin 19 (SPIO MOSI) GPIO10
+SCK = Pin 23 (SPI SCLK) GPIO11
+SDA = Pin 24 (SPI CE0) GPIO8
